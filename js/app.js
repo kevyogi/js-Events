@@ -21,7 +21,7 @@ The function will hide the contents in the pargraph with the id of `less` after 
 
 function lessContent(){
 	var hipster = document.getElementById("less");
-       if(hipster.style.display == 'block')
+       if(hipster.style.display === 'block')
           hipster.style.display = 'none';
        else
           hipster.style.display = 'block';
@@ -33,7 +33,7 @@ function lessContent(){
 function zoom(){
 	var tcat = document.getElementById("biggie");
 	tcat.addEventListener("mouseover", zoom);
-	if(tcat.style.fontSize = "100%")
+	if(tcat.style.fontSize === "100%")
 		tcat.style.fontSize = "150%";
 	else
 		tcat.style.fontSize = "100%";
@@ -60,7 +60,7 @@ function valueMenu(){
 
 function redFace(){
 	var ginny = document.getElementById("drink");
-	if(ginny.style.color = "black")
+	if(ginny.style.color === "black")
 		ginny.style.color = "red";
 	else
 		ginny.style.fontColor = "black";
@@ -73,7 +73,7 @@ function redFace(){
 function showPrice(){
 	var thePrice = document.getElementById("price");
 	document.getElementById("oreo").addEventListener("mouseover", showPrice);
-	if(thePrice.style.display = "none"){
+	if(thePrice.style.display === "none"){
 		thePrice.style.display = "block";
 		thePrice.innerHTML = "$5.55";
 	}
@@ -117,3 +117,26 @@ function randomQuote(){
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clickig on the button.
 */
+
+showHide.addEventListener("click", moneyMaker);
+
+function moneyMaker(){
+	if (showmoney.style.display === "none"){
+		showmoney.style.display = "block";
+	}
+	else{
+		showmoney.style.display = "none";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
